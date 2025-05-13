@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Enregistrement des étudiants</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+        <h1 style="text-align: center;"> Enregistrement des<br>Etudiants</h1>
+        <form method="post" action="traitement.php">
+            <fieldset class="etat-civil">
+                <legend style="text-align: center;"><h3>Etat Civil</h3></legend>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <p>
+                            <label for="nom">NOM</label>:<input type="text" name="nom" id="nom" placeholder="votre nom ..."/><br><br>
+                            <label for="prenom">PRENOMS</label>:<input type="text" name="prenom" id="nom" placeholder="votre prenom..."/><br><br>
+                            <label for="date de naissance">Date de naissance</label>:<input style="text-align: left;" type="text" name="date de naissance" id="date de naissance" placeholder="00/00/0000.."/><br><br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <p>
+                            <label for="sexe">SEXE:</label><select id="sexe">
+                                <option>Homme</option>
+                                <option>Femme</option>
+                                <option>Autre</option>
+                                </select>
+                                <br><br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <p>
+                                <label for="mail">Mail</label>:<input type="text" name="mail" id="mail" placeholder="e-mail@.com"/><br><br>
+                                <label for="contact">Contact</label>:<input type="text" name="contact" id="contact" placeholder="contact......."/><br><br></p>
+                        </div>
+                    </div>
+            </fieldset>
+            <fieldset>
+                <legend style="text-align: center;"><h3>Les diplômes</h3></legend>
+                <p>
+                    <input type="checkbox" name="cep" id="cep"/><label for="cep">CEP</label><br>
+                    <input type="checkbox" name="bepc" id="bepc"/><label for="bepc">BEPC</label><br>
+                    <input type="checkbox" name="bac" id="bac"/><label for="bac">BAC</label><br>
+                    <input type="checkbox" name="bts" id="bts"/><label for="bts">BTS</label><br>
+                </p>
+            </fieldset>
+            <p>
+                <h4>Votre adresse</h4>
+                <textarea for="adresse"></textarea>
+                <br><br>
+            </p>
+            <fieldset>
+                <legend style="text-align: center;">Pays</legend>
+                <input type="radio" name="benin" value="benin" id="benin"><label for="benin">Bénin</label><br>
+                <input type="radio" name="senegal" value="senegal" id="senegal"><label for="senegal">Sénégal</label><br>
+                <input type="radio" name="france" value="france" id="france"><label for="france">France</label><br>
+            </fieldset>
+            <fieldset class="boutons">
+                <legend style="text-align: center;">Bouton</legend>
+                <div class="button-group"> 
+                    <button type="submit" onclick="alert('Formulaire ennvoyé !')">Envoyer</button>
+                    <button type="reset">Effacer</button>
+                    <button type="button" onclick="window.close()">Quitter</button>
+                </div>
+            </fieldset>
+        </div>
+        </form>
+    </body>
+</html>
